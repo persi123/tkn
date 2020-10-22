@@ -205,6 +205,12 @@ li[aria-selected="true"] .btn{
   #tabs{
     padding: 0;
 }
+.coming {
+    position: relative;
+    top: 28px;
+    z-index: 100;
+    left: 0px;
+}
 }
 @media(max-width:440px){
     .flip-countdown{
