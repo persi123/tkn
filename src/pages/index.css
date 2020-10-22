@@ -37,7 +37,7 @@ box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .btn{
     border-radius: 0px!important;
-    width: 229px;
+    width: 196px;
     border: 0;
     height:40px;
     color: white!important;
@@ -106,6 +106,7 @@ li[aria-selected="true"] .btn{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
 .inst .card{
     background-color: #1e2641;
@@ -137,10 +138,34 @@ li[aria-selected="true"] .btn{
         width: 700px;
         height: 500px;
     }
-    @media(max-width:1366px){
-.inst{
+    @media(max-width:2020px){
+        .inst {
+            width: 67%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .mainImg {
+            height: 600px;
+            width: 700px;
+        }
+
+    }
+    @media(max-width:1368px){
+        .mainImg {
+            height: 600px;
+            width: 590px;
+        }
+        .inst {
+            width: 89%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+/* .inst{
     width:68%
-}
+} */
 #card1{
     box-shadow: 0 0 51px rgba(232, 95, 112, 0.74);
     background-color: #e85f70!important;
@@ -171,7 +196,7 @@ li[aria-selected="true"] .btn{
         height: 500px;
     }
     .inst {
-        width: 90%;
+        width: 92%;
     }
     .btn{
         height: 60px;
