@@ -39,13 +39,13 @@ box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
     border-radius: 0px!important;
     width: 229px;
     border: 0;
-    height:60px
-}
-.btn {
+    height:40px;
     color: white!important;
     border-color: #cccccc!important;
     background-color:#4a5167!important;
+    margin-left: 1px;
 }
+
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem #19bced!important;
     background-color: #19bced!important;
