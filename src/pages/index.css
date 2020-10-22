@@ -39,7 +39,7 @@ box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
     border-radius: 0px!important;
     width: 229px;
     border: 0;
-    height: 40px;
+    height:60px
 }
 .btn {
     color: white!important;
@@ -173,6 +173,9 @@ li[aria-selected="true"] .btn{
     .inst {
         width: 90%;
     }
+    .btn{
+        height: 60px;
+    }
     
 }
 @media(max-width:800px){
@@ -213,6 +216,7 @@ li[aria-selected="true"] .btn{
     }
     .btn{
         width: 93px;
+        height: 60px;
     }
     #tabs{
         padding: 0;
@@ -231,12 +235,12 @@ li[aria-selected="true"] .btn{
         padding: 8px;
     }
     #card1{
-        margin-left: 35px;
+        margin-left: 62px;
     }
     #card2{
-        margin-left: 35px;
+        margin-left: 62px;
     }
     #card3{
-        margin-left: 35px;
+        margin-left: 62px;
     }
 }
