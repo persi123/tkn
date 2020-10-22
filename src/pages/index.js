@@ -39,6 +39,7 @@ export default function index() {
         style={{
           alignItems: "center",
           color: "white",
+          display:"none"
         }}
         id="main"
       >
@@ -86,7 +87,7 @@ export default function index() {
             endAt={"2022-12-12 01:26:58"} // Date/Time
           />
         </div>
-        <div style={{ height: "600px", width: "700px" }}>
+        <div  className="mainImg">
           <img src={art} style={{ width: "inherit" }} />
         </div>
       </div>
@@ -95,6 +96,7 @@ export default function index() {
           <TabList
             className="d-flex"
             style={{ listStyle: "none", justifyContent: " center" }}
+            id="tabs"
           >
             <Tab>
               {" "}
@@ -116,7 +118,7 @@ export default function index() {
 
           <TabPanel>
             <Flip right>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center"  id="animeCards">
                 <div className="card" style={{ width: "18rem" }} id="card1">
                   <div className="card-body">
                     <img src={earn} />
@@ -159,9 +161,9 @@ export default function index() {
             </Flip>
           </TabPanel>
           <TabPanel>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center"  id="animeCards" >
               <Fade right>
-                <div className="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }} id="card1" >
                   <div className="card-body">
                     <img src={earn} />
                     <h5 className="card-title">Earn Token</h5>
@@ -219,8 +221,9 @@ export default function index() {
          justifyContent:"space-evenly",
          marginTop: "13px"
         }}
+        id="tokn"
       >
-        <div><img src={tkn}/></div>
+        <div className="aboutToken"><img src={tkn} style={{width:"inherit"}}/></div>
         <div style={{ width:"540px",padding:"38px"}}>
           <p style={{opacity: "0.3"}}>About Token</p>
           <h1>Token Sale</h1>

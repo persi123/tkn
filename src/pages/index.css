@@ -39,6 +39,7 @@ box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
     border-radius: 0px!important;
     width: 229px;
     border: 0;
+    height: 40px;
 }
 .btn {
     color: white!important;
@@ -70,15 +71,21 @@ box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
 #card1{
     box-shadow: 0 0 51px rgba(232, 95, 112, 0.74);
     background-color: #e85f70!important;
+    height: 300px!important;
+    width: 250px!important;
 }
 #card2{
     background-color: #fa8936;
     background-image: linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%);
     box-shadow: 0 0 51px rgba(250, 137, 54, 0.74);
+    height: 300px!important;
+    width: 250px!important;
 }
 #card3{
     background-image: linear-gradient(-234deg, #6ae472 0%, #4bc253 100%);
     box-shadow: 0 0 51px rgba(75, 194, 83, 0.74);
+    height: 300px!important;
+    width: 250px!important;
 }
 .card img{
     height: 103px;
@@ -123,4 +130,113 @@ li[aria-selected="true"] .btn{
 }
 #offer-cards h2{
     margin: 0px auto;
+}
+.mainImg{ height: 600px;
+    width: 700px} 
+    .aboutToken{
+        width: 700px;
+        height: 500px;
+    }
+    @media(max-width:1366px){
+.inst{
+    width:68%
+}
+#card1{
+    box-shadow: 0 0 51px rgba(232, 95, 112, 0.74);
+    background-color: #e85f70!important;
+    height: 300px!important;
+    width: 250px!important;
+}
+#card2{
+    background-color: #fa8936;
+    background-image: linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%);
+    box-shadow: 0 0 51px rgba(250, 137, 54, 0.74);
+    height: 300px!important;
+    width: 250px!important;
+}
+#card3{
+    background-image: linear-gradient(-234deg, #6ae472 0%, #4bc253 100%);
+    box-shadow: 0 0 51px rgba(75, 194, 83, 0.74);
+    height: 300px!important;
+    width: 250px!important;
+}
+
+    }
+@media(max-width:1024px){
+   .mainImg{ 
+       height:552px;
+     width: 435px} 
+     .aboutToken {
+        width: 447px;
+        height: 500px;
+    }
+    .inst {
+        width: 90%;
+    }
+    
+}
+@media(max-width:800px){
+    .mainImg{
+        display: none;
+    }
+    .flip-countdown {
+        margin-bottom: 20px!important;
+    }
+    .aboutToken{
+        display: none;
+    }
+    #tokn{
+        justify-content: left!important;
+    }
+    .inst {
+        width: 100%;
+    }
+    .card{
+        margin: 11px;
+    }
+   
+    .flip-countdown {
+        width: 494px!important;
+    }
+  .btn{width: 180px;}
+}
+@media(max-width:440px){
+    .flip-countdown{
+        width: 271px!important;
+    }
+    #animeCards{
+        flex-direction: column!important;
+    }
+    .card{
+        width: 301px!important;
+        margin: 28px;
+    }
+    .btn{
+        width: 93px;
+    }
+    #tabs{
+        padding: 0;
+    }
+    #offer-cards{
+        margin: 16px;
+        width: 342px!important;
+    }
+    .coming {
+        position: relative;
+        top: 32px;
+        z-index: 100;
+        left: 5px;
+    }
+    #heder{
+        padding: 8px;
+    }
+    #card1{
+        margin-left: 35px;
+    }
+    #card2{
+        margin-left: 35px;
+    }
+    #card3{
+        margin-left: 35px;
+    }
 }
