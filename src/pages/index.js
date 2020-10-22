@@ -39,6 +39,7 @@ export default function index() {
         style={{
           alignItems: "center",
           color: "white",
+    display:"none"
         }}
         id="main"
       >
