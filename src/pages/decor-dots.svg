@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="42" viewBox="0 0 54 42">
+    <g fill="none" fill-rule="evenodd" opacity=".058">
+        <g fill="#388AF7">
+            <g>
+                <g>
+                    <g transform="translate(-440 -2355) translate(136 2020) translate(11 89) translate(293 246)">
+                        <circle cx="2.893" cy="2.893" r="2.893"/>
+                        <circle cx="15.107" cy="2.893" r="2.893"/>
+                        <circle cx="26.679" cy="2.893" r="2.893"/>
+                        <circle cx="38.893" cy="2.893" r="2.893"/>
+                        <circle cx="2.893" cy="15.107" r="2.893"/>
+                        <circle cx="15.107" cy="15.107" r="2.893"/>
+                        <circle cx="26.679" cy="15.107" r="2.893"/>
+                        <circle cx="38.893" cy="15.107" r="2.893"/>
+                        <circle cx="2.893" cy="26.679" r="2.893"/>
+                        <circle cx="15.107" cy="26.679" r="2.893"/>
+                        <circle cx="26.679" cy="26.679" r="2.893"/>
+                        <circle cx="38.893" cy="26.679" r="2.893"/>
+                        <circle cx="2.893" cy="38.893" r="2.893"/>
+                        <circle cx="15.107" cy="38.893" r="2.893"/>
+                        <circle cx="26.679" cy="38.893" r="2.893"/>
+                        <circle cx="38.893" cy="38.893" r="2.893"/>
+                        <circle cx="51.107" cy="2.893" r="2.893"/>
+                        <circle cx="51.107" cy="15.107" r="2.893"/>
+                        <circle cx="51.107" cy="26.679" r="2.893"/>
+                        <circle cx="51.107" cy="38.893" r="2.893"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
