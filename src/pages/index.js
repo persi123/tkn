@@ -21,7 +21,9 @@ import inst1 from "./stellar-round.png";
 import inst2 from "./counterparty-round.png";
 import inst3 from "./eos-round.png";
 import inst4 from "./lisk.png";
-import ComingSoon from "./coming-soon.svg"
+import ComingSoon from "./coming-soon.svg";
+
+import Flippy, {FrontSide, BackSide } from "react-flippy";
 export default function index() {
   return (
     <div>
@@ -39,7 +41,7 @@ export default function index() {
         style={{
           alignItems: "center",
           color: "white",
-          display:"none"
+          display: "none",
         }}
         id="main"
       >
@@ -87,7 +89,7 @@ export default function index() {
             endAt={"2022-12-12 01:26:58"} // Date/Time
           />
         </div>
-        <div  className="mainImg">
+        <div className="mainImg">
           <img src={art} style={{ width: "inherit" }} />
         </div>
       </div>
@@ -118,52 +120,114 @@ export default function index() {
 
           <TabPanel>
             <Flip right>
-              <div className="d-flex justify-content-center"  id="animeCards">
-                <div className="card" style={{ width: "18rem" }} id="card1">
-                  <div className="card-body">
-                    <img src={earn} />
+            
+              <div className="d-flex justify-content-center" id="animeCards">
+              <Flippy
+                 flipOnHover={true} // default false
+                flipOnClick={false}// default false
+                flipDirection="horizontal" // horizontal or vertical
+                // ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div
+                 style={{ width: "250px", height: "300px", marginLeft:"15px" }} /// these are optional style, it is not necessary
+              >
+                <FrontSide
+                  style={{
+                    boxShadow: "0 0 51px rgba(232, 95, 112, 0.74)",
+                    backgroundColor:"#e85f70",
+                    height: "300px!important",
+                    width: "250px!important",
+                    color:"white"
+                  }}
+                >
+                 <img src={earn} />
                     <h5 className="card-title">Earn Token</h5>
                     {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                     <p className="card-text">
-                      Mine DETO by trading, providing liquidity or referring
-                      users to Delta
+                     
                     </p>
-                    {/* <a href="#" className="card-link">Card link</a>
-    <a href="#" className="card-link">Another link</a> */}
-                  </div>
-                </div>{" "}
-                <div className="card" style={{ width: "18rem" }} id="card2">
-                  <div className="card-body">
-                    <img src={earn} />
+                </FrontSide>
+                <BackSide style={{ backgroundColor:"#e85f70",color:"white" ,padding: "32px",
+    fontSize: "21px"}}>
+                Mine DETO by trading, providing liquidity or referring
+                      users to Delta
+                </BackSide>
+              </Flippy>
+              <Flippy
+                 flipOnHover={true} // default false
+                flipOnClick={false}// default false
+                flipDirection="horizontal" // horizontal or vertical
+                // ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div
+                 style={{ width: "250px", height: "300px",  marginLeft:"15px" }} /// these are optional style, it is not necessary
+              >
+                <FrontSide
+                  style={{
+                    boxShadow: "0 0 51px rgba(250, 137, 54, 0.74)",
+                    backgroundImage: "linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%)",
+                    backgroundColor:"#fa8936",
+                    height: "300px!important",
+                    width: "250px!important",
+                    color:"white"
+                  
+                  }}
+                >
+                 <img src={earn} />
                     <h5 className="card-title">Earn Staking Yield</h5>
                     {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                     <p className="card-text">
-                      Stake your DETO to earn a handsome yield on it
+                     
                     </p>
-                    {/* <a href="#" className="card-link">Card link</a>
-    <a href="#" className="card-link">Another link</a> */}
-                  </div>
-                </div>{" "}
-                <div className="card" style={{ width: "18rem" }} id="card3">
-                  <div className="card-body">
-                    <img src={earn} />
+                </FrontSide>
+                <BackSide style={{ boxShadow: "0 0 51px rgba(250, 137, 54, 0.74)",
+                    backgroundImage: "linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%)",
+                    backgroundColor:"#fa8936",color:"white",padding: "32px",
+                    fontSize: "21px" }}>
+                Stake your DETO to earn a handsome yield on it
+                </BackSide>
+              </Flippy>
+              <Flippy
+                 flipOnHover={true} // default false
+                flipOnClick={false}// default false
+                flipDirection="horizontal" // horizontal or vertical
+                // ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
+                // if you pass isFlipped prop component will be controlled component.
+                // and other props, which will go to div
+                 style={{ width: "250px", height: "300px",marginLeft:"15px" }} /// these are optional style, it is not necessary
+              >
+                <FrontSide
+                  style={{
+                    boxShadow: "0 0 51px rgba(75, 194, 83, 0.74)",
+                    backgroundImage: "linear-gradient(-234deg, #6ae472 0%, #4bc253 100%)",
+                    backgroundColor:"#fa8936",
+                    height: "300px!important",
+                    width: "250px!important",
+                    color:"white"
+                  }}
+                >
+                 <img src={earn} />
                     <h5 className="card-title">Grow with Bitfex</h5>
                     {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                     <p className="card-text">
-                      Value of Bitfex Token ∝ Bitfex’s revenues.As the exchange
-                      grows, so do the rewards
+                     
                     </p>
-                    {/* <a href="#" className="card-link">Card link</a>
-    <a href="#" className="card-link">Another link</a> */}
-                  </div>
-                </div>
+                </FrontSide>
+                <BackSide style={{ boxShadow: "0 0 51px rgba(75, 194, 83, 0.74)",
+                    backgroundImage: "linear-gradient(-234deg, #6ae472 0%, #4bc253 100%)",
+                    color:"white" ,padding: "32px",
+                    fontSize: "21px"}}>
+                Value of Bitfex Token ∝ Bitfex’s revenues.As the exchange
+                      grows, so do the rewards
+                </BackSide>
+              </Flippy>
               </div>
             </Flip>
           </TabPanel>
           <TabPanel>
-            <div className="d-flex justify-content-center"  id="animeCards" >
+            <div className="d-flex justify-content-center" id="animeCards">
               <Fade right>
-                <div className="card" style={{ width: "18rem" }} id="card1" >
+                <div className="card" style={{ width: "18rem" }} id="card1">
                   <div className="card-body">
                     <img src={earn} />
                     <h5 className="card-title">Earn Token</h5>
@@ -213,19 +277,21 @@ export default function index() {
       </div>
       <div
         style={{
-          display:"flex",
+          display: "flex",
           backgroundColor: "#1e2641",
           color: "white",
           flexDirection: "row",
           alignItems: "center",
-         justifyContent:"space-evenly",
-         marginTop: "13px"
+          justifyContent: "space-evenly",
+          marginTop: "13px",
         }}
         id="tokn"
       >
-        <div className="aboutToken"><img src={tkn} style={{width:"inherit"}}/></div>
-        <div style={{ width:"540px",padding:"38px"}}>
-          <p style={{opacity: "0.3"}}>About Token</p>
+        <div className="aboutToken">
+          <img src={tkn} style={{ width: "inherit" }} />
+        </div>
+        <div style={{ width: "540px", padding: "38px" }}>
+          <p style={{ opacity: "0.3" }}>About Token</p>
           <h1>Token Sale</h1>
           <div id="token-info">
             <p>
@@ -272,45 +338,57 @@ export default function index() {
       </div>
       <div className="inst">
         <div>
-          <img src={ComingSoon} className="coming"/>
-      <div class="card" style={{width: "18rem;"}} id="offer-cards">
-  <img src={inst1} class="card-img-top" alt="..."/>
-  <h2>Referral Mining</h2>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-</div>
-<div>
-<img src={ComingSoon} className="coming"/>
-<div class="card" style={{width: "18rem;"}} id="offer-cards">
-  <img src={inst2} class="card-img-top" alt="..."/>
-  <h2>Liquidity Mining</h2>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-</div>
-<div>
-<img src={ComingSoon} className="coming"/>
-<div class="card" style={{width: "18rem;"}} id="offer-cards">
-  <img src={inst3} class="card-img-top" alt="..."/>
-  <h2>Trade Farming</h2>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-</div>
-<div>
-<img src={ComingSoon} className="coming"/>
-<div class="card" style={{width: "18rem;"}} id="offer-cards">
-  <img src={inst4} class="card-img-top" alt="..."/>
-  <h2>Staking</h2>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-</div>
+          <img src={ComingSoon} className="coming" />
+          <div class="card" style={{ width: "18rem;" }} id="offer-cards">
+            <img src={inst1} class="card-img-top" alt="..." />
+            <h2>Referral Mining</h2>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src={ComingSoon} className="coming" />
+          <div class="card" style={{ width: "18rem;" }} id="offer-cards">
+            <img src={inst2} class="card-img-top" alt="..." />
+            <h2>Liquidity Mining</h2>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src={ComingSoon} className="coming" />
+          <div class="card" style={{ width: "18rem;" }} id="offer-cards">
+            <img src={inst3} class="card-img-top" alt="..." />
+            <h2>Trade Farming</h2>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src={ComingSoon} className="coming" />
+          <div class="card" style={{ width: "18rem;" }} id="offer-cards">
+            <img src={inst4} class="card-img-top" alt="..." />
+            <h2>Staking</h2>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

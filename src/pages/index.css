@@ -136,7 +136,10 @@ li[aria-selected="true"] .btn{
     width: 700px} 
     .aboutToken{
         width: 700px;
-        height: 500px;
+    height: 571px;
+    }
+    .card-text{
+        letter-spacing: 1px;
     }
     @media(max-width:2020px){
         .inst {
@@ -201,7 +204,12 @@ li[aria-selected="true"] .btn{
     .btn{
         height: 60px;
     }
-    
+    #tabs{
+        padding: 0;
+    }
+    /* .card{
+        margin: 11px;
+    } */
 }
 @media(max-width:800px){
     .mainImg{
@@ -236,6 +244,7 @@ li[aria-selected="true"] .btn{
     z-index: 100;
     left: 0px;
 }
+
 }
 @media(max-width:440px){
     .flip-countdown{
