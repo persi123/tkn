@@ -141,6 +141,86 @@ li[aria-selected="true"] .btn{
     .card-text{
         letter-spacing: 1px;
     }
+    .token-vesting{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .token-vesting h1{
+font-weight: 200;
+    }
+    .table-info, .table-info > th, .table-info > td {
+        background-color: #f3fdff!important;
+       
+    }
+    #vest-tabl{
+        width: 100%!important;
+    }
+    tbody{
+        font-weight: 200;
+    }
+    th{
+        font-weight: 400;
+    }
+    .table th, .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 0px!important;
+    }
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 0px!important;
+        color: #adabab!important;
+        font-weight: 200;
+    }
+    .token-distribution{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(30, 38, 65);
+        color: white;
+        padding: 50px;
+    }
+    .token-distribution > h1{
+        position: relative;
+        top: 118px;
+    }
+    .bg-tkn{
+        /* display: none; */
+        left: 50%;
+        text-align: center;
+        /* -webkit-transform: translateX(-50%); */
+        -ms-transform: translateX(-50%);
+        /* transform: translateX(-50%); */
+        top: -10px;
+        font-size: 152px;
+        font-family: Raleway;
+        font-weight: 700;
+        background: -webkit-linear-gradient(#d047e4,#ff4e3d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: .08;
+        line-height: 1;
+        white-space: nowrap;
+        position: static;
+    }
+    .chart__legend span {
+        height: 16px;
+        display: inline-block;
+        /* background-image: -webkit-gradient(linear,left top,right top,from(#ed8a4c),to(#ea485c));
+        background-image: -webkit-linear-gradient(left,#ed8a4c 0,#ea485c 100%); */
+        background-image: -o-linear-gradient(left,#ed8a4c 0,#ea485c 100%);
+        background-image: linear-gradient(to right,#ed8a4c 0,#ea485c 100%);
+        /* -webkit-border-radius: 3px; */
+        border-radius: 3px;
+        margin-right: 20px;
+    }
+    .flippy-front img{
+        width: 150px;
+        height: 100px;
+    }
     @media(max-width:2020px){
         .inst {
             width: 67%;

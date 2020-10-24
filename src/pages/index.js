@@ -148,7 +148,7 @@ export default function index() {
                     </p>
                 </FrontSide>
                 <BackSide style={{ backgroundColor:"#e85f70",color:"white" ,padding: "32px",
-    fontSize: "21px"}}>
+    fontSize: "17px"}}>
                 Mine DETO by trading, providing liquidity or referring
                       users to Delta
                 </BackSide>
@@ -183,7 +183,7 @@ export default function index() {
                 <BackSide style={{ boxShadow: "0 0 51px rgba(250, 137, 54, 0.74)",
                     backgroundImage: "linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%)",
                     backgroundColor:"#fa8936",color:"white",padding: "32px",
-                    fontSize: "21px" }}>
+                    fontSize: "17px" }}>
                 Stake your DETO to earn a handsome yield on it
                 </BackSide>
               </Flippy>
@@ -216,7 +216,7 @@ export default function index() {
                 <BackSide style={{ boxShadow: "0 0 51px rgba(75, 194, 83, 0.74)",
                     backgroundImage: "linear-gradient(-234deg, #6ae472 0%, #4bc253 100%)",
                     color:"white" ,padding: "32px",
-                    fontSize: "21px"}}>
+                    fontSize: "17px"}}>
                 Value of Bitfex Token ∝ Bitfex’s revenues.As the exchange
                       grows, so do the rewards
                 </BackSide>
@@ -390,6 +390,101 @@ export default function index() {
           </div>
         </div>
       </div>
+    <div className="token-distribution">
+      <h1 >Token Distribution</h1>
+      <div className="bg-tkn">Token Distribution</div>
+      <div>
+        <h2>Allocation of funds</h2>
+        <p>Total token supply - 200000</p>
+      </div>
+      <ul class="chart__legend">
+							<li>
+								<span style={{width: "101px"}}></span>
+								9% Founders and Team
+							</li>
+							<li>
+								<span style={{width: "153px"}} ></span>
+								13% Reserved Funding
+							</li>
+							<li>
+								<span style={{width: "34px"}} ></span>
+								2% Advisors
+							</li>
+							<li>
+								<span style={{width: "289px"}}></span>
+								25% Distribute to Community
+							</li>
+							<li>
+								<span style={{width: "22px"}} ></span>
+								1% Bounty campaign
+							</li>
+						</ul>
+    </div>
+    <div className="token-vesting">
+      <h1>Token Vesting Rule</h1>
+      <div style={{width:"726px"}}>
+      {/* <!--Table--> */}
+<table class="table table-striped w-auto" id="vest-tabl">
+
+  {/* <!--Table head--> */}
+  <thead>
+    <tr>
+      <th>Catogery</th>
+      <th>Upfront</th>
+      <th>Wait Period</th>
+      <th>Vesting Period</th>
+    
+    </tr>
+  </thead>
+  {/* <!--Table head-->
+
+  <!--Table body--> */}
+  <tbody>
+    <tr class="table-info">
+      {/* <th scope="row">1</th> */}
+      <th scope="row">Mined Tokens</th>
+      <td>0</td>
+      <td>0</td>
+      <td>45 days</td>
+    </tr>
+    <tr>
+      <th scope="row">Private Sale Investors</th>
+      <td>0</td>
+      <td>1-3 months</td>
+      <td>6 months</td>
+    </tr>
+    <tr class="table-info">
+      <th scope="row">Treasury</th>
+      <td>20%</td>
+      <td>1 month</td>
+      <td>12 months</td>
+    </tr>
+    <tr>
+      <th scope="row">Advisors and Employees</th>
+      <td>0</td>
+      <td>6 months</td>
+      <td>6 months</td>
+    </tr>
+    <tr class="table-info">
+      <th scope="row">Equity Holders (ex founders)</th>
+      <td>0</td>
+      <td>6 months</td>
+      <td>12 months</td>
+        </tr>
+    <tr>
+      <th scope="row">Founders</th>
+      <td>0</td>
+      <td>6 months</td>
+      <td>12 months</td>
+    </tr>
+  </tbody>
+  {/* <!--Table body--> */}
+
+
+</table>
+{/* <!--Table--> */}
+      </div>
+    </div>
     </div>
   );
 }
