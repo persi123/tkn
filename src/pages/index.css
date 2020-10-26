@@ -227,6 +227,9 @@ font-weight: 200;
     #tab-panel{
         margin: 151px auto!important;
     }
+    .card-text ul li{
+        font-size: 17px;
+    }
     @media(max-width:2020px){
         .inst {
             width: 67%;

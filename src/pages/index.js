@@ -137,18 +137,26 @@ export default function index() {
                     backgroundColor:"#e85f70",
                     height: "300px!important",
                     width: "250px!important",
-                    color:"white"
+                    color:"white",
+                    borderRadius:"31px"
                   }}
                 >
                  <img src={earn} />
                     <h5 className="card-title">Earn Token</h5>
                     {/* <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6> */}
                     <p className="card-text">
-                     
+                     <ul>
+                       <li>
+                         Bfx token
+                       </li>
+                       <li>
+                         Bfx token
+                       </li>
+                     </ul>
                     </p>
                 </FrontSide>
                 <BackSide style={{ backgroundColor:"#e85f70",color:"white" ,padding: "32px",
-    fontSize: "17px"}}>
+    fontSize: "17px" ,  borderRadius:"31px"}}>
                 Mine DETO by trading, providing liquidity or referring
                       users to Delta
                 </BackSide>
@@ -169,7 +177,8 @@ export default function index() {
                     backgroundColor:"#fa8936",
                     height: "300px!important",
                     width: "250px!important",
-                    color:"white"
+                    color:"white" ,  borderRadius:"31px"
+
                   
                   }}
                 >
@@ -183,7 +192,7 @@ export default function index() {
                 <BackSide style={{ boxShadow: "0 0 51px rgba(250, 137, 54, 0.74)",
                     backgroundImage: "linear-gradient(-234deg, #ea9d64 0%, #fa8936 100%)",
                     backgroundColor:"#fa8936",color:"white",padding: "32px",
-                    fontSize: "17px" }}>
+                    fontSize: "17px" ,  borderRadius:"31px"}}>
                 Stake your DETO to earn a handsome yield on it
                 </BackSide>
               </Flippy>
@@ -203,7 +212,7 @@ export default function index() {
                     backgroundColor:"#fa8936",
                     height: "300px!important",
                     width: "250px!important",
-                    color:"white"
+                    color:"white" ,  borderRadius:"31px"
                   }}
                 >
                  <img src={earn} />
@@ -216,7 +225,7 @@ export default function index() {
                 <BackSide style={{ boxShadow: "0 0 51px rgba(75, 194, 83, 0.74)",
                     backgroundImage: "linear-gradient(-234deg, #6ae472 0%, #4bc253 100%)",
                     color:"white" ,padding: "32px",
-                    fontSize: "17px"}}>
+                    fontSize: "17px" ,  borderRadius:"31px"}}>
                 Value of Bitfex Token ∝ Bitfex’s revenues.As the exchange
                       grows, so do the rewards
                 </BackSide>
