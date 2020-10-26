@@ -97,7 +97,10 @@ li[aria-selected="true"] .btn{
     box-shadow: 0 0 0 0.2rem #19bced!important;
     background-color: #19bced!important; 
     border: 0;
-}  
+} 
+#token-info{
+    letter-spacing: 1px;
+} 
 #token-info p b{
     margin-right: 5px;
 } 
@@ -220,6 +223,9 @@ font-weight: 200;
     .flippy-front img{
         width: 150px;
         height: 100px;
+    }
+    #tab-panel{
+        margin: 151px auto!important;
     }
     @media(max-width:2020px){
         .inst {

@@ -118,7 +118,7 @@ export default function index() {
             </Tab>
           </TabList>
 
-          <TabPanel>
+          <TabPanel style={{margin:"151px auto"}}>
             <Flip right>
             
               <div className="d-flex justify-content-center" id="animeCards">
@@ -160,7 +160,7 @@ export default function index() {
                 // ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                 style={{ width: "250px", height: "300px",  marginLeft:"15px" }} /// these are optional style, it is not necessary
+                 style={{ width: "250px", height: "300px",  marginLeft:"53px" }} /// these are optional style, it is not necessary
               >
                 <FrontSide
                   style={{
@@ -194,7 +194,7 @@ export default function index() {
                 // ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
-                 style={{ width: "250px", height: "300px",marginLeft:"15px" }} /// these are optional style, it is not necessary
+                 style={{ width: "250px", height: "300px",marginLeft:"53px" }} /// these are optional style, it is not necessary
               >
                 <FrontSide
                   style={{
