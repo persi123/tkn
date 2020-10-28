@@ -112,7 +112,7 @@ li[aria-selected="true"] .btn{
     justify-content: center;
 }
 .inst .card{
-    background-color: #1e2641;
+  
     width: 360px!important;
 }
 .inst .card img{
@@ -120,20 +120,46 @@ li[aria-selected="true"] .btn{
     width: 50px;
     margin: 6px;
 }
+.inst > div{
+    margin-left: 20px;
+    margin-top: 15px;
+}
 .coming{
     position: relative;
-    top: 17px;
+    top: -9px;
     z-index: 100;
-    left: 38px;
+    left: -35px;
+    width: 150px!important;
+    height: 39px!important;
 }
 #offer-cards:hover{
     transform: none;
 }
 #offer-cards{
-    background-image: url("./decor-dots.svg");
+    /* position: relative;
+    top: -23px; */
+    background-color: transparent;
+    margin: 0;
+    border: 0px;
+}
+.inst .flippy-front,.inst .flippy-back{
+    background-image: url("./decor-dots.svg")!important;
+    margin: 0;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #1e2641!important;
+}
+.flippy-container{
+    height: 300px;
 }
 #offer-cards h2{
     margin: 0px auto;
+}
+#offer-cards .card-body{
+    padding: 25px;
+}
+#offer-cards p{
+    font-weight: bolder;
 }
 .mainImg{ height: 600px;
     width: 700px} 
@@ -148,7 +174,7 @@ li[aria-selected="true"] .btn{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 80px;
     }
     .token-vesting h1{
 font-weight: 200;
@@ -185,6 +211,7 @@ font-weight: 200;
         background-color: rgb(30, 38, 65);
         color: white;
         padding: 50px;
+        margin-top: 58px;
     }
     .token-distribution > h1{
         position: relative;
@@ -230,12 +257,58 @@ font-weight: 200;
     .card-text ul li{
         font-size: 17px;
     }
+    .Details-t{
+        background-image: url("./docs-bg.png");
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 46px;
+        background-size: auto;
+    }
+    .Details-t h1{
+        text-align: center
+    }
+    .token-detail ul{
+       list-style: none;
+       font-weight: 300;
+    }
+    .token-detail ul li{
+        margin: 20px;
+        font-size: 20px;
+    }
+    .token-detail ul li b{
+        font-weight: bold;
+    font-size: 25px;
+    }
+    .token-detail{
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+    }
+    .Benefits{
+        background-color: rgb(30, 38, 65);
+        color: white;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        background-image: url("./docs-bg.png");
+    }
+    .Benefits h1{
+        text-align: center;
+        padding: 20px;
+    }
+    .Benefits > div{
+        padding: 128px;
+    }
     @media(max-width:2020px){
         .inst {
-            width: 67%;
+            width: 100%;
             margin: auto;
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
         
         .mainImg {
@@ -354,7 +427,7 @@ font-weight: 200;
         padding: 0;
     }
     #offer-cards{
-        margin: 16px;
+        /* margin: 16px; */
         width: 342px!important;
     }
     .coming {
