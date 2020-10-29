@@ -110,6 +110,7 @@ li[aria-selected="true"] .btn{
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    background: url("./greenbg.png");
 }
 .inst .card{
   
@@ -271,21 +272,32 @@ font-weight: 200;
         text-align: center
     }
     .token-detail ul{
+    
+        /* background: url("./utility-0-bg.svg"); */
        list-style: none;
        font-weight: 300;
-    }
+       background-color: #4cb7fd;
+    width:800px;
+    height: 462px;
+    padding: 54px;
+    border-radius: 93px;
+    box-shadow: rgb(76, 183, 253) 0px 0px 10px; 
+     color: white;
+    /* box-shadow: 1px 1px 25px 0px rgba(50, 50, 50, 0.75); */
+}
+    
     .token-detail ul li{
         margin: 20px;
         font-size: 20px;
     }
     .token-detail ul li b{
-        font-weight: bold;
+        /* font-weight: bold; */
     font-size: 25px;
     }
     .token-detail{
         display: flex;
         align-items:center;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .Benefits{
         background-color: rgb(30, 38, 65);

@@ -6,6 +6,8 @@ import earn from "./yield.svg";
 import earn2 from "./earn.svg";
 import earn3 from "./Exchange-12.png";
 import earn4 from "./Artbot1.png";
+// import greenbg from "./";
+
 
 import {
   Button,
@@ -104,7 +106,7 @@ export default function index() {
       <div className="Details-t">
         <h1>Token Details</h1>
         <div className="token-detail">
-          <img
+          {/* <img
             src={det}
             style={{
               margin: "19px",
@@ -112,7 +114,7 @@ export default function index() {
               height: "539px",
               width: "600px",
             }}
-          />
+          /> */}
           <ul>
             <li>
               <b>Symbol :</b> Bfx
